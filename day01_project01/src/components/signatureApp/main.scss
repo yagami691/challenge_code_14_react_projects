@@ -1,0 +1,39 @@
+@mixin calendar(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+
+@mixin inputText(){
+    position: relative;
+    top:450px;
+
+}
+
+.name{
+    @include calendar;
+    & div{
+        font-size: large;
+        margin:15px;
+    }
+    
+}
+
+p {
+    @include calendar()
+}
+.date{
+    @include inputText;
+    left:150px;
+
+}
+#inputRight{
+    position:absolute;
+    right: 150px;
+    top:635px;
+    width: 120px;
+}
